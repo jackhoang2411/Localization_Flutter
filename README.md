@@ -44,5 +44,6 @@ App localization setup: lib/main.dart
 
 <div align="center">
     <img src="https://github.com/jackhoang2411/ninja_trader_assignment/blob/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-06-12%20at%2016.00.27.png" width="150px"</img> 
+    <img src="https://github.com/jackhoang2411/ninja_trader_assignment/blob/main/screenshots/Screenshot_1686611826.png" width="150px"</img> 
 </div>
 
