@@ -41,12 +41,8 @@ App localization setup: lib/main.dart
 
 ### Screenshots
 
-<div align="left">
-    <img src="https://github.com/jackhoang2411/ninja_trader_assignment/blob/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-06-12%20at%2016.00.24.png" width="150px"</img> 
-</div>
-<div align="left">
+
+<div align="center">
     <img src="https://github.com/jackhoang2411/ninja_trader_assignment/blob/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-06-12%20at%2016.00.27.png" width="150px"</img> 
 </div>
-<div align="left">
-    <img src="https://github.com/jackhoang2411/ninja_trader_assignment/blob/main/screenshots/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-06-12%20at%2016.00.30.png" width="150px"</img> 
-</div>
+
