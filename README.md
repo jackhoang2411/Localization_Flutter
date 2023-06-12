@@ -1,16 +1,39 @@
 # ninja_trader_assignment
 
-A new Flutter project.
+This is a simple Flutter mobile application that demonstrates the Flutter localization functionality. It provides a welcome screen with a greeting message and a language dropdown menu. Switching the language updates the app's localization.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run this application, make sure you have Flutter and Dart installed on your machine. If not, please follow the official Flutter installation guide: [Install Flutter](https://flutter.dev/docs/get-started/install)
 
-A few resources to get you started if this is your first Flutter project:
+### Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This project relies on the following dependencies:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- `flutter_localizations`: Flutter package for adding localization support.
+- `intl`: Flutter package for internationalization support.
+
+To install these dependencies, run the following commands in your terminal:
+
+```bash
+flutter pub add flutter_localizations --sdk=flutter
+flutter pub add intl:any
+```
+Running the App
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Connect your device or start an emulator.
+4. Run the following command to launch the app: `flutter run`
+
+
+### Features
+Supports localization in multiple languages.
+Displays a welcome screen with a greeting message.
+Provides a dropdown menu to switch between supported languages.
+Localization Setup
+This project follows the localization setup as described in the official Flutter documentation: https://docs.flutter.dev/accessibility-and-localization/internationalization
+
+### The localization files and configurations can be found in the following locations:
+
+Language translations: lib/core/l10n/*.arb
+App localization setup: lib/main.dart
