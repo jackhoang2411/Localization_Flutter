@@ -1,3 +1,5 @@
 {
-  "helloUser": "Hola usuaria!"
+  "helloUser": "Hola usuaria!",
+  "english": "Inglesa",
+  "spanish": "Española"
 }

@@ -1,3 +1,5 @@
 {
-  "helloUser": "Hello, user!"
+  "helloUser": "Hello, user!",
+  "english": "English",
+  "spanish": "Spanish"
 }
