@@ -36,4 +36,5 @@ This project follows the localization setup as described in the official Flutter
 ### The localization files and configurations can be found in the following locations:
 
 Language translations: lib/core/l10n/*.arb
+
 App localization setup: lib/main.dart
