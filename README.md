@@ -13,7 +13,7 @@ This project relies on the following dependencies:
 - `flutter_localizations`: Flutter package for adding localization support.
 - `intl`: Flutter package for internationalization support.
 
-Running the App
+### Running the App
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
 3. Connect your device or start an emulator.
