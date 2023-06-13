@@ -13,12 +13,6 @@ This project relies on the following dependencies:
 - `flutter_localizations`: Flutter package for adding localization support.
 - `intl`: Flutter package for internationalization support.
 
-To install these dependencies, run the following commands in your terminal:
-
-```bash
-flutter pub add flutter_localizations --sdk=flutter
-flutter pub add intl:any
-```
 Running the App
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
