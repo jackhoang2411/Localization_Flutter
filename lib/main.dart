@@ -11,7 +11,7 @@ class MyApp extends StatefulWidget {
   @override
   State<MyApp> createState() => _MyAppState();
 
-// Static method to access the _MyAppState from other widgets
+  // Static method to access the _MyAppState from other widgets
   static _MyAppState? of(BuildContext context) =>
       context.findAncestorStateOfType<_MyAppState>();
 }
@@ -19,7 +19,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Locale? _locale;
 
-// Method to set the selected locale
+  // Method to set the selected locale
   void setLocale(Locale value) {
     setState(() {
       _locale = value;
@@ -32,26 +32,18 @@ class _MyAppState extends State<MyApp> {
       locale: _locale,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const MyHomePage(
-        title: "Welcome",
-      ),
+      home: const MyHomePage(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
-  final String title;
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({Key? key}) : super(key: key);
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
+      appBar: AppBar(title: Text(AppLocalizations.of(context)!.welcome)),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -62,27 +54,30 @@ class _MyHomePageState extends State<MyHomePage> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 16),
-            DropdownButton<String>(
-              value: AppLocalizations.of(context)!.localeName,
-              onChanged: (value) {
-                // Accessing the setLocale method from MyApp using the static of() method
-                MyApp.of(context)!
-                    .setLocale(Locale.fromSubtags(languageCode: value!));
-              },
-              items: [
-                DropdownMenuItem(
-                  value: 'en',
-                  child: Text(AppLocalizations.of(context)!.english),
-                ),
-                DropdownMenuItem(
-                  value: 'es',
-                  child: Text(AppLocalizations.of(context)!.spanish),
-                ),
-              ],
-            ),
+            createDropdownButton(context),
           ],
         ),
       ),
+    );
+  }
+
+  DropdownButton<String> createDropdownButton(BuildContext context) {
+    return DropdownButton<String>(
+      value: AppLocalizations.of(context)!.localeName,
+      onChanged: (value) {
+        // Accessing the setLocale method from MyApp using the static of() method
+        MyApp.of(context)!.setLocale(Locale.fromSubtags(languageCode: value!));
+      },
+      items: [
+        DropdownMenuItem(
+          value: 'en',
+          child: Text(AppLocalizations.of(context)!.english),
+        ),
+        DropdownMenuItem(
+          value: 'es',
+          child: Text(AppLocalizations.of(context)!.spanish),
+        ),
+      ],
     );
   }
 }
