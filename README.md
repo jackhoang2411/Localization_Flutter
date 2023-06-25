@@ -1,4 +1,4 @@
-# ninja_trader_assignment
+# Localization_Flutter
 
 This is a simple Flutter mobile application that demonstrates the Flutter localization functionality. It provides a welcome screen with a greeting message and a language dropdown menu. Switching the language updates the app's localization.
 
